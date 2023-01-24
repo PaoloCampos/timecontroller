@@ -1,0 +1,152 @@
+<body>
+
+
+  <meta charset="UTF-8">
+  <title> Paolo Campos Developer </title>
+  <link rel="stylesheet" href="./style.css">
+
+
+
+
+<svg viewBox="0 0 100 100" width="100" height="100">
+    <defs>
+        
+        <filter id="shadow-large">
+            <feDropShadow dx="0" dy="0" stdDeviation="4"></feDropShadow>
+        </filter>
+        <filter id="shadow-small">
+                <feDropShadow dx="0" dy="0" stdDeviation="0.2"></feDropShadow>
+        </filter>
+
+        
+        <mask id="mask">
+            <g transform="translate(50 50)">
+                
+                <g class="hours" transform="rotate(285)">
+                    <circle cx="0" cy="0" r="50" fill="#fff">
+                    </circle>
+                    <path d="M 0 -50 v 50 l 28.86 -50" fill="#000">
+                    </path>
+                </g>
+            </g>
+        </mask>
+    </defs>
+
+    
+    <circle cx="50" cy="50" r="46" fill="#303335">
+    </circle>
+
+    
+    <circle cx="50" cy="50" r="42" fill="#70E000" filter="url(#shadow-large)">
+    </circle>
+
+    
+    <g class="clock--face" font-size="8px" transform="translate(50 50)" text-anchor="middle" dominant-baseline="middle">
+        
+    
+    <text transform="rotate(-60) translate(34 0) rotate(60)">
+        01
+    </text>
+  
+    <text transform="rotate(-30) translate(34 0) rotate(30)">
+        02
+    </text>
+  
+    <text transform="rotate(0) translate(34 0) rotate(0)">
+        03
+    </text>
+  
+    <text transform="rotate(30) translate(34 0) rotate(-30)">
+        04
+    </text>
+  
+    <text transform="rotate(60) translate(34 0) rotate(-60)">
+        05
+    </text>
+  
+    <text transform="rotate(90) translate(34 0) rotate(-90)">
+        06
+    </text>
+  
+    <text transform="rotate(120) translate(34 0) rotate(-120)">
+        07
+    </text>
+  
+    <text transform="rotate(150) translate(34 0) rotate(-150)">
+        08
+    </text>
+  
+    <text transform="rotate(180) translate(34 0) rotate(-180)">
+        09
+    </text>
+  
+    <text transform="rotate(210) translate(34 0) rotate(-210)">
+        10
+    </text>
+  
+    <text transform="rotate(240) translate(34 0) rotate(-240)">
+        11
+    </text>
+  
+    <text transform="rotate(270) translate(34 0) rotate(-270)">
+        12
+    </text>
+  </g>
+
+    
+    <circle mask="url(#mask)" cx="50" cy="50" r="50" fill="#303335">
+    </circle>
+
+   
+    <circle cx="50" cy="50" r="4" filter="url(#shadow-small)" fill="#303335">
+    </circle>
+
+    
+    <g class="hands" transform="translate(50 50)">
+        <g class="minutes" transform="rotate(108)">
+            <path fill="#fff" d="M -0.4 8 h 0.8 v -33 h -0.8 z">
+            </path>
+            <circle fill="#303335" cx="0" cy="0" r="0.6">
+            </circle>
+        </g>
+
+        <g class="seconds" transform="rotate(84)"> 
+            <path fill="#FF0A54" d="M -0.4 10 h 0.8 v -45 h -0.8 z">
+            </path>
+            <circle stroke-width="0.4" stroke="#70E000" fill="#303335" cx="0" cy="0" r="0.8">
+            </circle>
+        </g>
+    </g>
+</svg>
+
+
+<div class="controls">
+    <div class="controls__control" data-control="hours">
+        <button>+</button>
+        <span class="control--hours">10</span>
+        <button>-</button>
+    </div>
+
+    <div class="controls__control" data-control="minutes">
+        <button>+</button>
+        <span class="control--minutes">18</span>
+        <button>-</button>
+    </div>
+
+    <div class="controls__control" data-control="seconds">
+        <button>+</button>
+        <span class="control--seconds">14</span>
+        <button>-</button>
+    </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script><script src="./script.js"></script>
+
+
+
+
+  <script src="./script.js"></script>
+
+
+
+</body>
